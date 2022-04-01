@@ -17,11 +17,11 @@ public class MobileController {
 
     @RequestMapping(path = "/verify", method = RequestMethod.GET)
     public String verifyAccount() {
-        try {
-            verifyService.verify();
-        } catch (RuntimeException e) {
-            return "access-denied";
-        }
+//        try {
+//            verifyService.verify();
+//        } catch (RuntimeException e) {
+//            return "access-denied";
+//        }
         return "verified";
     }
 }
